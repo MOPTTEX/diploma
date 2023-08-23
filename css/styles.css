@@ -15,6 +15,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: right;
+  margin-bottom: 40px;
 }
 
 .page-header {
@@ -297,6 +298,9 @@ body {
   display: flex;
   flex-wrap: nowrap;
   text-align: left;
+  pointer-events: none;
+  cursor: default;
+  user-select: none;
 }
 .conf-step__legend .col {
   max-width: 25rem;
@@ -443,4 +447,7 @@ body {
   pointer-events: none
  }
 
-
+/* a {
+  font-size: medium;
+  color: white;
+} */
