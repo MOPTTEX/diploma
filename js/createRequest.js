@@ -1,6 +1,6 @@
-function createRequest(method, url, data, callback) {
+function createRequest(data, callback) {
   let xhr = new XMLHttpRequest();
-  xhr.open(method, url);
+  xhr.open('POST', 'https://jscp-diplom.netoserver.ru/');
   xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
   xhr.responseType = 'json';
   xhr.onerror = function () {

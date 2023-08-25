@@ -15,7 +15,7 @@ priceStandart.innerText = `${parsedSeances.hallPriceStandart}`;
 let priceVip = document.querySelector('.price-vip');
 priceVip.innerText = `${parsedSeances.hallPriceVip}`;
 
-createRequest('POST', 'https://jscp-diplom.netoserver.ru/', `event=get_hallConfig&timestamp=${parsedSeances.seanceTimeStamp}&hallId=${parsedSeances.hallId}&seanceId=${parsedSeances.seanceId}`, function (response) {
+createRequest(`event=get_hallConfig&timestamp=${parsedSeances.seanceTimeStamp}&hallId=${parsedSeances.hallId}&seanceId=${parsedSeances.seanceId}`, function (response) {
     // console.log(response);
 
     if (response) {

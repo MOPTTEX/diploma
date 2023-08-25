@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return daysOfWeek[date.getDay()];
   }
 
-  createRequest('POST', 'https://jscp-diplom.netoserver.ru/', 'event=update', function (response) {
+  createRequest('event=update', function (response) {
     // console.log(response);
     let films = response.films.result;
     let halls = response.halls.result.filter((openhalls) => openhalls.hall_open !== '0');
